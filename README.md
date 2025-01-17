@@ -10,7 +10,10 @@ sudo cp gpu-power-limit.service /etc/systemd/system/
 ```
 
 2. Make it executable:
-   chmod +x /usr/local/bin/gpu-power-limit.sh
+
+```bash
+chmod +x /usr/local/bin/gpu-power-limit.sh
+```
 
 3. Adjust ownership:
 
@@ -22,8 +25,12 @@ sudo chmod 644 /etc/systemd/system/gpu-power-limit.service
 ```
 
 4. Enable and start the service:
-   sudo systemctl enable gpu-power-limit
-   sudo systemctl start gpu-power-limit
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable gpu-power-limit
+sudo systemctl start gpu-power-limit
+```
 
 # License
 
