@@ -5,8 +5,8 @@ Basic setup to limit nvidia gpu power consumption on startup for multi-gpu syste
 1. Place the files:
 
 ```bash
-mv gpu-power-limit.sh /usr/local/bin/
-mv gpu-power-limit.service /etc/systemd/system/
+sudo cp gpu-power-limit.sh /usr/local/bin/
+sudo cp gpu-power-limit.service /etc/systemd/system/
 ```
 
 2. Make it executable:
